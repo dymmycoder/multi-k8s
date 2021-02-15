@@ -10,7 +10,7 @@
         },
         {
             "name": "server",
-            "image": "shengcer/multu-server",
+            "image": "shengcer/multi-server",
             "hostname": "api",
             "essential": false,
             "memory": 128
