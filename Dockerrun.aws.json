@@ -18,21 +18,23 @@
         {
             "name": "worker",
             "image": "shengcer/multi-worker",
+            "hostname": "worker",
             "essential": false,
             "memory": 128
         },
         {
              "name": "nginx",
              "image": "shengcer/multi-nginx",
+             "hostname": "nginx",
              "essential": true,
-             "memory": 128,
              "portMappings": [
                  {
                      "hostPort": 80,
                      "containerPort": 80
                  }
              ],
-             "links": ["client", "server"]
+             "links": ["client", "server"],
+             "memory": 128
         }
     ]
 }
